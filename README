@@ -12,6 +12,16 @@ this starts the simulator which waits for two kinds of incoming connections:
 the simulator prints on the screen the ports numbers on which it listens for
 these connections.
 
+The build system is based on meson, with its cross compilation support. A cross
+compilation configuration is provided in cross-arm-none-eabi.txt. The project can be
+compiled with the following commands:
+
+```
+meson build --cross-file cross-arm-none-eabi.txt
+cd build
+ninja
+```
+
 To use the simulator, you must connect to it a gdb client:
 arm-elf-gdb
 file Examples/foo (for instance)
