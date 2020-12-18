@@ -1,0 +1,11 @@
+[binaries]
+c = 'arm-none-eabi-gcc'
+cpp = 'arm-none-eabi-cpp'
+ar = 'arm-none-eabi-ar'
+strip = 'arm-none-eabi-strip'
+
+[host_machine]
+system = 'arm-simulator'
+cpu_family = 'arm'
+cpu = 'cortex-m4'
+endian = 'big'
